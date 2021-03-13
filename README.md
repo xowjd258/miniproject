@@ -35,5 +35,8 @@ python3 img_train_and_validation.py
 ```
 + 정상적으로 training이 됐다면 다음과 같은 이미지가 뜨고, 이미지를 모두 닫으면 프로그램이 종료됩니다.
 ![Figure_1](https://user-images.githubusercontent.com/55902342/111029839-382b4580-8442-11eb-8a82-1871aaca2fa8.png)
+![Figure_2](https://user-images.githubusercontent.com/55902342/111029869-627d0300-8442-11eb-9f32-0daba48fe726.png)
+![Figure_3](https://user-images.githubusercontent.com/55902342/111029871-63ae3000-8442-11eb-8944-a41b779b2ff6.png)
+
 
 
