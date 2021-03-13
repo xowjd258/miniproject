@@ -34,7 +34,6 @@ pip3 install torch torchvision matplotlib
 python3 img_train_and_validation.py
 ```
 + 정상적으로 training이 됐다면 다음과 같은 이미지가 뜨고, 이미지를 모두 닫으면 프로그램이 종료됩니다.
-
 ![Figure_1](https://user-images.githubusercontent.com/55902342/111029839-382b4580-8442-11eb-8a82-1871aaca2fa8.png)
 
 
