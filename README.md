@@ -22,7 +22,7 @@ pip3 install selenium bs4
 python3 crawl.py
 ```
 ---
-## 이미지 training 및 validation
+## 이미지 training 및 validation(리눅스 기준)
 + 이미지 training과 validation에 필요한 라이브러리를 받습니다.
 ```
 pip3 install torch torchvision matplotlib
