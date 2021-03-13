@@ -6,8 +6,7 @@
 + 이미지 크롤링 하기에 앞서 필요 라이브러리를 다운 받습니다.
 
 ```
-pip3 install selenium
-pip3 install bs4
+pip3 install selenium bs4
 ```
 + 이후 chromedriver.chromium.org/downloads 에 접속해 크롬 브라우저 버전에 맞는 크롬 드라이버를 설치해주세요(설치 폴더는 c:에 해주세요. 기본적으로 소스코드가 c:로 설정되어있습니다)
 + 크롬 브라우저 버전은 chrome://version에서 확인 할 수 있습니다.
@@ -19,5 +18,19 @@ pip3 install bs4
 ```
 python3 crawl.py
 ```
----
 
+---
+## 데이터셋 나누기(미구현)
+---
+## 이미지 training 및 validation
++ 이미지 training과 validation에 필요한 라이브러리를 받습니다.
+```
+pip3 install torch torchvision matplotlib
+```
++ 에디터로 36번 라인에서 dataset 위치를 자신의 데이터셋 위치로 바꾸어주세요
++ 기본적으로 '/home/kim/crawling'으로 설정되어있는데, 이 부분을 수정하면 됩니다.
++ 이제 테스트와 validation을 시작합니다.
+```
+python3 img_train_and_validation.py
+```
++ 정상적으로 training이 됐다면 다음과 같은 이미지가 뜨고, 이미지를 모드 닫으면 프로그램이 종료됩니다.
