@@ -1,6 +1,15 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup as soups
- 
+import os
+
+def createFolder(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print ('Error: Creating directory. ' +  directory)
+
+
 def search_selenium(search_name, search_path, search_limit) :
     search_url = "https://www.google.com/search?q=" + str(search_name) + "&hl=ko&tbm=isch"
     
@@ -12,10 +21,14 @@ def search_selenium(search_name, search_path, search_limit) :
     print("로드된 이미지 개수 : ", image_count)
  
     browser.implicitly_wait(2)
- 
+    folder = search_name+'/'
+    new_path = os.path.join('c:/crawling/',folder)
+    print(new_path)
+    createFolder(new_path)
+
     for i in range( search_limit ) :
         image = browser.find_elements_by_tag_name("img")[i]
-        image.screenshot("c:/crawling/" + str(i) + ".png")
+        image.screenshot(new_path + str(i) + ".png")
  
     browser.close()
  
