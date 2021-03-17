@@ -1,6 +1,8 @@
 # 물고기 도감 프로젝트
 + 물고기 사진을 받으면 물고기 종류를 구별해주는 프로젝트입니다
 + 계속해서 버전을 업데이트 할것입니다.
++ 현재 이미지는 classification으로 진행되고있는데, custom dataset을 이용한 object detction으로 바꿀 예정입니다
++ object detction은 조금 오래 걸릴것 같습니다 
 
 ## 이미지 크롤링 하고 dataset을 train/validation으로 나누기(Window 기준)
 ---
