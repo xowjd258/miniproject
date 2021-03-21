@@ -49,8 +49,14 @@ python3 img_train_and_validation.py
 !tree clothing -L 2
 !cat clothing/labels/train/0.txt
 ```
-+ YOLO setup
++ YOLO setup + dataset
 ```
+!pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+!pip install numpy==1.17
+!pip install PyYAML==5.3.1
+!pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+!git clone https://github.com/NVIDIA/apex && cd apex && pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" . --user && cd .. && rm -rf apex
+!gdown --id 1uWdQ2kn25RSQITtBHa9_zayplm27IXNC
 !git clone https://github.com/ultralytics/yolov5
 %cd yolov5
 !git checkout ec72eea62bf5bb86b0272f2e65e413957533507f
