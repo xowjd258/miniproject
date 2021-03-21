@@ -41,4 +41,23 @@ python3 img_train_and_validation.py
 ![Figure_3](https://user-images.githubusercontent.com/55902342/111029871-63ae3000-8442-11eb-8944-a41b779b2ff6.png)
 
 
+---
+## (작업중) customdataset YOLO v5
++ https://curiousily.com/posts/object-detection-on-custom-dataset-with-yolo-v5-using-pytorch-and-python/ 를 참고하여 만들어 졌습니다.
++ file 구조 확인 및 annotation 확인
+```
+!tree clothing -L 2
+!cat clothing/labels/train/0.txt
+```
++ YOLO setup
+```
+!git clone https://github.com/ultralytics/yolov5
+%cd yolov5
+!git checkout ec72eea62bf5bb86b0272f2e65e413957533507f
+```
++ model용 configuration file 하나, dataset용  configuration files하나 준비
+```
+!gdown --id 1ZycPS5Ft_0vlfgHnLsfvZPhcH6qOAqBO -O data/clothing.yaml
+!gdown --id 1czESPsKbOWZF7_PkCcvRfTiUUJfpx12i -O models/yolov5x.yaml
+```
 
