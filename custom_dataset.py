@@ -118,4 +118,6 @@ def create_dataset(clothing, categories, dataset_type):
           )
 create_dataset(train_clothing, categories, 'train')
 create_dataset(val_clothing, categories, 'val')
-!tree clothing -L 2
+
+from utils.utils import plot_results
+plot_results();
