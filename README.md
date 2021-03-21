@@ -42,7 +42,7 @@ python3 img_train_and_validation.py
 
 
 ---
-## (작업중) customdataset YOLO v5
+## (작업중) custom dataset YOLO v5
 + https://curiousily.com/posts/object-detection-on-custom-dataset-with-yolo-v5-using-pytorch-and-python/ 를 참고하여 만들어 졌습니다.
 + file 구조 확인 및 annotation 확인
 ```
