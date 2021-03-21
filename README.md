@@ -60,4 +60,10 @@ python3 img_train_and_validation.py
 !gdown --id 1ZycPS5Ft_0vlfgHnLsfvZPhcH6qOAqBO -O data/clothing.yaml
 !gdown --id 1czESPsKbOWZF7_PkCcvRfTiUUJfpx12i -O models/yolov5x.yaml
 ```
++ train with custom dataset
+```
+!python custom_dataset.py --img 640 --batch 4 --epochs 30 \
+  --data ./data/clothing.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt \
+  --name yolov5x_clothing --cache
+```
 
